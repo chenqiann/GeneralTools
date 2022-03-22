@@ -10,5 +10,5 @@ Based on python module `matplotlib.pyplot`, customize parameters in `plot.py` to
 
 An example:
 
-![](figs/line_example.png)
+![line](figs/line_example.png)
 
