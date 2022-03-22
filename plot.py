@@ -27,7 +27,8 @@ y3_smooth = spl3(x_smooth)
 
 
 # plot
-plt.figure(figsize=(12, 10), dpi=72)
+# plt.figure(figsize=(12, 10), dpi=72)
+plt.figure(figsize=(12, 10), dpi=50)
 # theme #
 # print(plt.style.available) # 查看所有主题
 # plt.style.use('seaborn-whitegrid')
