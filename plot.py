@@ -27,7 +27,7 @@ y3_smooth = spl3(x_smooth)
 
 
 # plot
-plt.figure(figsize=(8, 6), dpi=72)
+plt.figure(figsize=(12, 10), dpi=72)
 # theme #
 # print(plt.style.available) # 查看所有主题
 # plt.style.use('seaborn-whitegrid')
@@ -44,9 +44,9 @@ plt.grid(True)
 plt.xlabel(u'名称', fontsize=20, fontproperties=song)
 # plt.xlabel(u'名称', fontsize=20, family='simsun', style='oblique')
 # y轴名称
-plt.ylabel(u'y轴标签', fontsize=20, family='simsun', weight='bold')
+plt.ylabel(u'y axis', fontsize=20, family='simsun', weight='bold')
 # 图标题
-# plt.title('title', fontsize=24)
+plt.title('title', fontsize=24)
 # 标签图例
 plt.legend(loc='upper left', prop={'size': 15}, shadow=True, edgecolor='black')
 # loc取值：
@@ -75,7 +75,8 @@ plt.xticks(np.arange(5), ('Tom', 'Dick', 'Harry', 'Sally', 'Sue'), rotation=90)
 # ax.xaxis.set_major_locator(x_major_locator) #把x轴的主刻度设置为10的倍数
 # ax.yaxis.set_major_locator(y_major_locator) #把y轴的主刻度设置为1的倍数
 
+filepath = "figs/line_example.png"
+plt.savefig(filepath)
+
 plt.show()
 
-# filepath = ""
-# plt.savefig(filepath)

@@ -1,3 +1,5 @@
 .idea/*
+.DS_Store
 test.py
-*.png
+frame2.png
+frame1.png
