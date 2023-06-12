@@ -28,7 +28,8 @@ y2_smooth = spl2(x_smooth)
 
 
 # plot
-plt.figure(figsize=(8, 6), dpi=72)
+# plt.figure(figsize=(12, 10), dpi=72)
+plt.figure(figsize=(12, 10), dpi=50)
 # theme #
 # print(plt.style.available) # 查看所有主题
 # plt.style.use('seaborn-whitegrid')
@@ -47,7 +48,7 @@ plt.xlabel(u'Height of images (pixels)', family='Times New Roman', fontsize=20)
 # y轴名称
 plt.ylabel(u'Processing time (s)', family='Times New Roman', fontsize=20)
 # 图标题
-# plt.title('title', fontsize=24)
+plt.title('title', fontsize=24)
 # 标签图例
 plt.legend(loc='lower right', prop={'size': 15, "family": "Times New Roman"}, shadow=True, edgecolor='black')
 # loc取值：
@@ -78,5 +79,6 @@ ax.yaxis.set_major_locator(y_major_locator) #把y轴的主刻度设置为1的倍
 
 # plt.show()
 
-filepath = "fig5.png"
+filepath = "figs/line_example.png"
 plt.savefig(filepath)
+plt.show()
